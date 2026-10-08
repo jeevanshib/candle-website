@@ -1,7 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
+**/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -15,6 +16,7 @@
 
 # next.js
 /.next/
+**/.next/
 /out/
 
 # production
@@ -22,11 +24,22 @@
 
 # local caches and editor files
 .turbo
+.cache/
+.next-cache/
 .eslintcache
 .idea/
+.vscode/
 *.swp
 *.swo
 *~
+
+# generated local Next.js agent notes
+/AGENTS.md
+
+# local design references
+/Aavé Candlès landing page.html
+/Aavé Candlès landing page.md
+/Building a landing page - Claude.pdf
 
 # unused create-next-app starter assets
 /public/file.svg
